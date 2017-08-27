@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Geometry Quiz App</title>
+	<link rel="stylesheet" href="css\main.css">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="javascript\main.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+
+<!-- Start of index page -->
+<div data-role="page" id="index">
+
+	<div data-role="header" data-position="fixed">
+    <a class="ui-btn-left ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-info ui-btn-icon-notext" href="#info" data-direction="slide">Info</a>
+		<h1>Geometry Quiz App</h1>
+    <a class="ui-btn-right ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-gear ui-btn-icon-notext" href="#setting">Setting</a>
+</div>
+
+
+	<div role="main" class="ui-content">
+		<audio id="welcomeaudio" controls autoplay hidden><!--this code is used to hide the audio from screen-->
+			<source src="audio/welcome.mp3" type="audio/mpeg">
+		</audio>
+
+		<img src="image/icon.png" alt="Icon">
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<a class="ui-btn-right ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-carat-r" href="#page1">Start</a>
+
+</div>
+<!-- /footer -->
+</div><!-- /page -->
+
+
+
+
+<!-- Start of setting page -->
+<div data-role="page" id="setting">
+	<div data-role="header" data-position="fixed">
+    <a class="ui-btn-left ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-info ui-btn-icon-notext" href="#info" data-direction="slide">Info</a>
+		<h1>Geometry Quiz App</h1>
+    <a class="ui-btn-right ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-home ui-btn-icon-notext" href="#index" data-direction="reverse">Home</a>
+</div>
+
+
+	<div role="main" class="ui-content">
+			<p>
+				<!--This can be used to provide an option to mute background audio, but there is no background audio. That's why it's blank-->
+			</p>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+
+		<h2>Copyright</h2>
+
+
+</div>
+<!-- /footer -->
+</div><!-- /page -->
+
+
+
+
+<!-- Start of info page -->
+<div data-role="page" id="info">
+	<div data-role="header" data-position="fixed">
+    <a class="ui-btn-left ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-gear ui-btn-icon-notext" href="#setting" data-direction="slide">Setting</a>
+		<h1>Geometry Quiz App</h1>
+    <a class="ui-btn-right ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-home ui-btn-icon-notext" href="#index" data-direction="reverse">Home</a>
+</div>
+
+
+	<div role="main" class="ui-content">
+
+<p>Reference</p>
+<p><a href="http://demos.jquerymobile.com/1.4.5/">Jquery Mobile Demos</a></p>
+<p><a href="https://stackoverflow.com/questions/28403558/multiple-choice-quiz-getting-score">Quiz Javascript</a></p>
+<p><a href="http://geometrymaths.weebly.com/fun-facts.html">Geometery Facts</a></p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+
+		<h2>Copyright</h2>
+
+
+</div>
+<!-- /footer -->
+</div><!-- /page -->
+
+
+
+
+
+
+
+
+
+<!-- Start of 1st page -->
+<div data-role="page" id="page1">
+
+	<!--Header-->
+	<div data-role="header" data-position="fixed">
+    <a class="ui-btn-left ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-info ui-btn-icon-notext" href="#info" data-direction="slide">Info</a>
+		<h1>Geometry Quiz App</h1>
+    <a class="ui-btn-right ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-home ui-btn-icon-notext" href="#index" data-direction="reverse">Home</a>
+	</div>
+
+<!--Content-->
+	<div role="main" class="ui-content">
+		<form>
+<!--Reference radio: jquery mobile demos-->
+		    <legend>Q1: How many face does a cylinder have?</legend>
+				<input name="que1" id="que1a" type="radio" value="0">
+		    <label for="que1a">2</label>
+				<input name="que1" id="que1b" type="radio" value="0">
+		    <label for="que1b">5</label>
+				<input name="que1" id="que1c" type="radio" value="1">
+		    <label for="que1c">3</label>
+		    <input name="que1" id="que1d" type="radio" value="0">
+		    <label for="que1d">4</label>
+		    <input name="que1" id="que1e" type="radio" value="0">
+		    <label for="que1e">Don't Know</label>
+		</form>
+	</div><!-- /content -->
+
+	<!--Footer-->
+	<div data-role="footer" data-position="fixed">
+
+		<h2>Copyright</h2>
+    <a class="ui-btn-right ui-btn ui-btn-b ui-btn-inline  ui-corner-all  ui-icon-carat-r ui-btn-icon-notext" href="#page1a" data-direction="slide">next</a>
+
+	</div>
+	<!-- /footer -->
+</div><!-- /page -->
+
+
+
+
+<!-- Start of 1a page -->
+<div data-role="page" id="page1a">
+
+	<!--Header-->
+	<div data-role="header" data-position="fixed">
+    <a class="ui-btn-left ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-info ui-btn-icon-notext" href="#info" data-direction="slide">Info</a>
+		<h1>Geometry Quiz App</h1>
+    <a class="ui-btn-right ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-home ui-btn-icon-notext" href="#index" data-direction="reverse">Home</a>
+</div>
+
+	<!--Content-->
+	<div role="main" class="ui-content">
+
+			<p>Q1: How many face does a cylinder have?</p>
+			<p>Ans: 3. Cylinder have 2 plane surfaces and 1 curved surface.</p>
+
+
+	</div><!-- /content -->
+	<!--Footer-->
+	<div data-role="footer" data-position="fixed">
+
+		<h2>Copyright</h2>
+    <a class="ui-btn-right ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-carat-r ui-btn-icon-notext" href="#page2" data-direction="slide">Next</a>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+
+<!-- Start of 2nd page -->
+<div data-role="page" id="page2">
+
+	<!--Header-->
+	<div data-role="header" data-position="fixed">
+    <a class="ui-btn-left ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-info ui-btn-icon-notext" href="#info" data-direction="slide">Info</a>
+		<h1>Geometry Quiz App</h1>
+    <a class="ui-btn-right ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-home ui-btn-icon-notext" href="#index" data-direction="reverse">Home</a>
+	</div>
+
+<!--Content-->
+	<div role="main" class="ui-content">
+		<form>
+
+		    <legend>Q2: What shape is most efficient?</legend>
+				<input name="que2" id="que2a" type="radio" value="0">
+		    <label for="que2a">Sphere`</label>
+				<input name="que2" id="que2b" type="radio" value="1">
+		    <label for="que2b">Hexagon</label>
+				<input name="que2" id="que2c" type="radio" value="0">
+		    <label for="que2c">Cone</label>
+		    <input name="que2" id="que2d" type="radio" value="0">
+		    <label for="que2d">Cube</label>
+		    <input name="que2" id="que2e" type="radio" value="0">
+		    <label for="que2e">Don't Know</label>
+		</form>
+	</div><!-- /content -->
+
+	<!--Footer-->
+	<div data-role="footer" data-position="fixed">
+
+		<h2>Copyright</h2>
+    <a class="ui-btn-right ui-btn ui-btn-b ui-btn-inline  ui-corner-all  ui-icon-carat-r ui-btn-icon-notext" href="#page2a" data-direction="slide">next</a>
+
+	</div>
+	<!-- /footer -->
+</div><!-- /page -->
+
+
+
+
+<!-- Start of 2a page -->
+<div data-role="page" id="page2a">
+
+	<!--Header-->
+	<div data-role="header" data-position="fixed">
+    <a class="ui-btn-left ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-info ui-btn-icon-notext" href="#info" data-direction="slide">Info</a>
+		<h1>Geometry Quiz App</h1>
+    <a class="ui-btn-right ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-home ui-btn-icon-notext" href="#index" data-direction="reverse">Home</a>
+</div>
+
+	<!--Content-->
+	<div role="main" class="ui-content">
+
+
+			<p>Q2: How many face does a cylinder have?</p>
+			<p>Ans: Hexagon shape makes most efficient mostly used of space and building materials(wikipedia,2017).</p>
+
+
+	</div><!-- /content -->
+	<!--Footer-->
+	<div data-role="footer" data-position="fixed">
+
+		<h2>Copyright</h2>
+    <a class="ui-btn-right ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-carat-r ui-btn-icon-notext" href="#page3" data-direction="slide">Next</a>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+
+<!-- Start of 3rd page -->
+<div data-role="page" id="page3">
+
+<!--Header-->
+<div data-role="header" data-position="fixed">
+  <a class="ui-btn-left ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-info ui-btn-icon-notext" href="#info" data-direction="slide">Info</a>
+  <h1>Geometry Quiz App</h1>
+  <a class="ui-btn-right ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-home ui-btn-icon-notext" href="#index" data-direction="reverse">Home</a>
+</div>
+
+<!--Content-->
+<div role="main" class="ui-content">
+  <form>
+
+      <legend>Q3: 3D shape that look like donut is?</legend>
+      <input name="que3" id="que3a" type="radio" value="0">
+      <label for="que3a">Circle</label>
+      <input name="que3" id="que3b" type="radio" value="0">
+      <label for="que3b">Sphere</label>
+      <input name="que3" id="que3c" type="radio" value="1">
+      <label for="que3c">Torus</label>
+      <input name="que3" id="que3d" type="radio" value="0">
+      <label for="que3d">Oval</label>
+      <input name="que3" id="que3e" type="radio" value="0">
+      <label for="que3e">Don't Know</label>
+  </form>
+</div><!-- /content -->
+
+<!--Footer-->
+<div data-role="footer" data-position="fixed">
+
+  <h2>Copyright</h2>
+  <a class="ui-btn-right ui-btn ui-btn-b ui-btn-inline  ui-corner-all  ui-icon-carat-r ui-btn-icon-notext" href="#page3a" data-direction="slide">next</a>
+
+</div>
+<!-- /footer -->
+</div><!-- /page -->
+
+
+
+
+<!-- Start of 3a page -->
+<div data-role="page" id="page3a">
+
+<!--Header-->
+<div data-role="header" data-position="fixed">
+  <a class="ui-btn-left ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-info ui-btn-icon-notext" href="#info" data-direction="slide">Info</a>
+  <h1>Geometry Quiz App</h1>
+  <a class="ui-btn-right ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-home ui-btn-icon-notext" href="#index" data-direction="reverse">Home</a>
+</div>
+
+<!--Content-->
+<div role="main" class="ui-content">
+
+    <p>Q3: 3D shape that look like donut is?</p>
+    <p>Ans: Torus</p>
+
+
+</div><!-- /content -->
+<!--Footer-->
+<div data-role="footer" data-position="fixed">
+
+  <h2>Copyright</h2>
+  <a class="ui-btn-right ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-carat-r ui-btn-icon-notext" href="#page4" data-direction="slide">Next</a>
+</div><!-- /footer -->
+
+</div><!-- /page -->
+
+
+
+<!-- Start of 4th page -->
+<div data-role="page" id="page4">
+
+	<!--Header-->
+	<div data-role="header" data-position="fixed">
+    <a class="ui-btn-left ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-info ui-btn-icon-notext" href="#info" data-direction="slide">Info</a>
+		<h1>Geometry Quiz App</h1>
+    <a class="ui-btn-right ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-home ui-btn-icon-notext" href="#index" data-direction="reverse">Home</a>
+	</div>
+
+<!--Content-->
+	<div role="main" class="ui-content">
+		<form>
+
+		    <legend>Q4: Which polygons have least number of sides?</legend>
+				<input name="que4" id="que4a" type="radio" value="0">
+		    <label for="que4a">Square</label>
+				<input name="que4" id="que4b" type="radio" value="0">
+		    <label for="que4b">Circle</label>
+				<input name="que4" id="que4c" type="radio" value="0">
+		    <label for="que4c">Rectangle</label>
+		    <input name="que4" id="que4d" type="radio" value="1">
+		    <label for="que4d">Triangle</label>
+		    <input name="que4" id="que4e" type="radio" value="0">
+		    <label for="que4e">Don't Know</label>
+		</form>
+	</div><!-- /content -->
+
+	<!--Footer-->
+	<div data-role="footer" data-position="fixed">
+
+		<h2>Copyright</h2>
+    <a class="ui-btn-right ui-btn ui-btn-b ui-btn-inline  ui-corner-all  ui-icon-carat-r ui-btn-icon-notext" href="#page4a" data-direction="slide">next</a>
+
+	</div>
+	<!-- /footer -->
+</div><!-- /page -->
+
+
+
+
+<!-- Start of 4a page -->
+<div data-role="page" id="page4a">
+
+	<!--Header-->
+	<div data-role="header" data-position="fixed">
+    <a class="ui-btn-left ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-info ui-btn-icon-notext" href="#info" data-direction="slide">Info</a>
+		<h1>Geometry Quiz App</h1>
+    <a class="ui-btn-right ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-home ui-btn-icon-notext" href="#index" data-direction="reverse">Home</a>
+</div>
+
+	<!--Content-->
+	<div role="main" class="ui-content">
+
+			<p>Q4: Which polygons have least number of sides?</p>
+			<p>Ans: Triangle</p>
+
+
+	</div><!-- /content -->
+	<!--Footer-->
+	<div data-role="footer" data-position="fixed">
+
+		<h2>Copyright</h2>
+    <a class="ui-btn-right ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-carat-r ui-btn-icon-notext" href="#final" data-direction="slide">Next</a>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+
+
+
+<!-- Start of Final page -->
+<div data-role="page" id="final">
+
+	<!--Header-->
+	<div data-role="header" data-position="fixed">
+    <a class="ui-btn-left ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-info ui-btn-icon-notext" href="#info" data-direction="slide">Info</a>
+		<h1>Geometry Quiz App</h1>
+    <a class="ui-btn-right ui-btn ui-btn-b ui-btn-inline  ui-corner-all ui-btn-icon-left ui-icon-home ui-btn-icon-notext" href="#index" data-direction="reverse">Home</a>
+	</div>
+
+<!--Content-->
+	<div role="main" class="ui-content">
+		<form>
+			<!--this code works when all the questions are on one page
+			hen questions are on different pages-->
+			<p><input type="button" value="Click for Scores" onClick="getTotal(this.form);"></p>
+			<p><input type= text size 5 name= "player"></p>
+			<p><input type="reset" value="Clear"></p>
+
+		</form>
+	</div><!-- /content -->
+
+	<!--Footer-->
+	<div data-role="footer" data-position="fixed">
+
+		<h2>Copyright</h2>
+    <a class="ui-btn-right ui-btn ui-btn-b ui-btn-inline  ui-corner-all  ui-icon-delete ui-btn-icon-notext" href="#index" data-direction="slide">Home</a>
+
+	</div>
+	<!-- /footer -->
+</div><!-- /page -->
+
+
+
+
+
+</body>
+</html>
